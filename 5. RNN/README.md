@@ -8,4 +8,4 @@ Data: IMDB
 
 * GRU 모델 구조 
 
-* Test Loss:  0.33 | Test Acc: 85.97
+* [Epoch10] Test Loss:  0.33 | Test Acc: 85.97

@@ -52,7 +52,7 @@ class BasicGRU(nn.Module):
         x, _ = self.gru(x, h_0)  # [i, b, h]
         h_t = x[:,-1,:]
         self.dropout(h_t)
-        logit = self.out(h_t)  # [b, h] -> [b, o]
+        logit = self.out(h_t)  # [b, h] -> [b, c]
         return logit
     
     def _init_state(self, batch_size=1):

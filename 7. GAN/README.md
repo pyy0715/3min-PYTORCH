@@ -9,9 +9,7 @@
 
 ## gan.py
 
----
 ### Training Result
----
 ```{.python}
 Epoch:[279/300],
 D_loss_total: 1.1322,
@@ -19,18 +17,17 @@ G_loss: 0.9716,
 D(x):0.72,
 D(G(z)): 0.45
 ```
----
+
 ### Inference
----
 ```{.python}
 model = Generator()
 checkpoint = torch.load('./checkpoint/generator.pth.tar')
 model.load_state_dict(checkpoint['Generator_state_dict'])
 model
 ```
----
+
+
 ### checkpoint
----
 **Define model and optimizer**
 ```{.python}
 G = Generator().to(device)

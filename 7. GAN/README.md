@@ -1,6 +1,5 @@
 # 학습내용 및 훈련결과 정리
 
-
 **`Generative Adversarial Network`**
 - [x] Generative: 생성 
 - [x] Adversial: 적대적
@@ -11,6 +10,7 @@
 ## gan.py
 
 ### Training Result
+---
 ```{.python}
 Epoch:[279/300],
 D_loss_total: 1.1322,
@@ -20,6 +20,7 @@ D(G(z)): 0.45
 ```
 
 ### model
+---
 **Inference**
 ```{.python}
 model = Generator()
@@ -29,6 +30,7 @@ model
 ```
 
 ### checkpoint
+---
 **Define model and optimizer**
 ```{.python}
 G = Generator().to(device)

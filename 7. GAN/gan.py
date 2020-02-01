@@ -91,7 +91,7 @@ criterion = nn.BCELoss()
 G_optimizer = optim.Adam(G.parameters(), lr=opt.lr)
 D_optimizer = optim.Adam(D.parameters(), lr=opt.lr)
 
-
+best_val_loss = 0
 for epoch in range(opt.n_epochs):
     for i, (images, _) in enumerate(train_loader):
         images = images.reshape(opt.batch_size, -1).to(device)
@@ -134,7 +134,6 @@ for epoch in range(opt.n_epochs):
         epoch+1, opt.n_epochs, D_loss_total.item(), G_loss.item(), real_score.mean().item(), fake_score.mean().item()
     ))
     # Check Point
-    best_val_loss = 0
     if best_val_loss == 0 or fake_score.mean().item() >= best_val_loss:
         if not os.path.isdir("checkpoint"):
             os.makedirs("checkpoint")

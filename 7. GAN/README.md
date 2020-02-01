@@ -47,3 +47,9 @@ G_optimizer_state_dict(checkpoint1['Generator_optimizer_state_dict'])
 D.load_state_dict(checkpoint2['Discriminator_state_dict'])
 D_optimizer_state_dict(checkpoint2['Discriminator_optimizer_state_dict'])
 ```
+
+
+## conditional_gan.py
+
+* 정보를 추가하여, 조건에 맞는 새로운 이미지를 생성.
+* 학습 방법은 위와 같음.

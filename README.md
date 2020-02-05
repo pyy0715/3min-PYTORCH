@@ -9,7 +9,7 @@
 5. **`RNN`**(Recurrent Neural Networks) ***(Update)***
 6. **`FGSM`**(Fast Gradient Sign Method) ***(Update)***
 7. **`GAN`**(General Adversarial Networks) ***(Update)***
-8. DQN(Deep Q-Networks)
+8. **`DQN`**(Deep Q-Networks)  ***(Update)***
 
 
 ## SOURCE
